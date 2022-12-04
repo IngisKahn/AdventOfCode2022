@@ -7,7 +7,6 @@ var max = 0;
 var max2 = 0;
 var max3 = 0;
 while (reader.ReadLine() is { } line)
-{
     if (line == string.Empty)
     {
         if (current > max)
@@ -21,7 +20,7 @@ while (reader.ReadLine() is { } line)
     }
     else
         current += int.Parse(line);
-}
+
 Console.WriteLine(max);
 Console.WriteLine(max + max2 + max3);
 

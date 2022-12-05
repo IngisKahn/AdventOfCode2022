@@ -11,3 +11,14 @@ while (await reader.ReadLineAsync() is { } line)
     score += player2 + 4 + (int)(dif * -7.5f + dif * dif * 4.5f);
 }
 Console.WriteLine(score);
+input1Stream.Seek(3, SeekOrigin.Begin);
+score = 0;
+while (await reader.ReadLineAsync() is { } line)
+{
+    var player1 = line[0] - 'A';
+    var dif = line[2] - 'Y';
+    var player2 = (player1 + dif + 3) % 3;
+    dif = (-dif + 3) % 3;
+    score += player2 + 4 + (int)(dif * -7.5f + dif * dif * 4.5f);
+}
+Console.WriteLine(score);

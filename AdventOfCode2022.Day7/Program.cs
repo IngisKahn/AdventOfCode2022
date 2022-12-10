@@ -21,11 +21,11 @@ while (await reader.ReadLineAsync() is { } line)
 Console.WriteLine(root.TotalSmallSize);
 Console.WriteLine(root.FindTargetSize(30000000 - (70000000 - root.Size)));
 
-class Dir
+record Dir
 {
     public Dir(Dir? parent) => this.Parent = parent;
     public Dir? Parent { get; }
-    public Dictionary<string, Dir> Dirs { get; } = new();
+    private Dictionary<string, Dir> Dirs { get; } = new();
 
     public Dir AddDir(string name)
     {

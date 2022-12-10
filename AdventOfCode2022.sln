@@ -17,6 +17,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode2022.Day6", "Ad
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode2022.Day7", "AdventOfCode2022.Day7\AdventOfCode2022.Day7.csproj", "{C562E98B-DAFB-4C40-BADC-B736CF1D2D68}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode2022.Day8", "AdventOfCode2022.Day8\AdventOfCode2022.Day8.csproj", "{DD5E5F75-9DA4-4D98-94A3-DF21F5859144}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode2022.Day9", "AdventOfCode2022.Day9\AdventOfCode2022.Day9.csproj", "{3940C0A3-5CDF-43DF-921E-928B1E9E0F20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode2022.Day10", "AdventOfCode2022.Day10\AdventOfCode2022.Day10.csproj", "{F4BBCCD8-2ADC-46F4-8EB2-9726F504BD33}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +57,18 @@ Global
 		{C562E98B-DAFB-4C40-BADC-B736CF1D2D68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C562E98B-DAFB-4C40-BADC-B736CF1D2D68}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C562E98B-DAFB-4C40-BADC-B736CF1D2D68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD5E5F75-9DA4-4D98-94A3-DF21F5859144}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD5E5F75-9DA4-4D98-94A3-DF21F5859144}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD5E5F75-9DA4-4D98-94A3-DF21F5859144}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD5E5F75-9DA4-4D98-94A3-DF21F5859144}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3940C0A3-5CDF-43DF-921E-928B1E9E0F20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3940C0A3-5CDF-43DF-921E-928B1E9E0F20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3940C0A3-5CDF-43DF-921E-928B1E9E0F20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3940C0A3-5CDF-43DF-921E-928B1E9E0F20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4BBCCD8-2ADC-46F4-8EB2-9726F504BD33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4BBCCD8-2ADC-46F4-8EB2-9726F504BD33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4BBCCD8-2ADC-46F4-8EB2-9726F504BD33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4BBCCD8-2ADC-46F4-8EB2-9726F504BD33}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

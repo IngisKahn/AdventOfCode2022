@@ -1,22 +1,17 @@
-﻿using System.Reflection;
+﻿using StreamReader reader = new("Input1.txt");
+var score1 = 0;
+var score2 = 0;
+while (await reader.ReadLineAsync() is { } line)
+{
+    var p1 = line[0] - '@'; 
+    var p2 = line[2] - 'W';
+    score1 += (p2 - p1 + 4) % 3 * 3 + p2;
 
-await using var input1Stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AdventOfCode2022.Day2.Input1.txt")!;
-using StreamReader reader = new(input1Stream);
-var score = 0;
-while (await reader.ReadLineAsync() is { } line)
-{
-    var player2 = line[2] - 'X';
-    var dif = (line[0] - 'A' - player2 + 3) % 3;
-    score += player2 + 4 + (int)(dif * -7.5f + dif * dif * 4.5f);
-}
-Console.WriteLine(score);
-input1Stream.Seek(3, SeekOrigin.Begin);
-score = 0;
-while (await reader.ReadLineAsync() is { } line)
-{
     var dif = line[2] - 'Y';
     var player2 = (line[0] - 'A' + dif + 3) % 3;
     dif = (-dif + 3) % 3;
-    score += player2 + 4 + (int)(dif * -7.5f + dif * dif * 4.5f);
+    score2 += player2 + 4 + (int)(dif * -7.5f + dif * dif * 4.5f);
+    score2 -= (p1 + p2) % 3 + 1 + (p2 - 1) * 3;
 }
-Console.WriteLine(score);
+Console.WriteLine(score1);
+Console.WriteLine(score2);

@@ -8,11 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Input1.txt" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="Input1.txt" />
+    <None Update="Input1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
